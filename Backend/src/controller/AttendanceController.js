@@ -3,14 +3,13 @@
 
 import {attendanceModel} from '../models/AttendanceModel.js';
 
-// ✅ Attendance mark करणे (students + faculties दोन्ही साठी)
 export const markAttendance = async (req, res) => {
   try {
     const { date, subject, students, faculties } = req.body;
 
     const attendanceRecord = new attendanceModel({
       date,
-      subject: subject || "N/A",   // faculty साठी subject नसेल तर default
+      subject: subject || "N/A",  
       students: students || [],
       faculties: faculties || []
     });
@@ -49,7 +48,6 @@ export const getFacultyAttendance = async (req, res) => {
   }
 };
 
-// ✅ फक्त Student Attendance
 export const getStudentAttendance = async (req, res) => {
   try {
     const records = await attendanceModel.find({ students: { $exists: true, $ne: [] } })
@@ -128,7 +126,7 @@ export const deleteSingleStudent = async (req, res) => {
 export const deleteStudentAttendance = async (req, res) => {
   try {
     const { id } = req.params;
-    // Replace with your DB logic (e.g., MongoDB)
+    
     const deleted = await attendanceModel.findByIdAndDelete(id);
     if (!deleted) {
       return res.status(404).json({ message: 'Record not found' });

@@ -8,7 +8,7 @@ import {
 import { getStudents } from "../../services/ManageStudentApi";
 
 const ExamMarks = () => {
-  const [studentList, setStudentList] = useState([]); // फक्त student names
+  const [studentList, setStudentList] = useState([]); 
   const [students, setStudents] = useState([]);
   const [formData, setFormData] = useState({
     name: "",
@@ -53,7 +53,7 @@ useEffect(() => {
     try {
       const res = await getExamMarks();
       if (res.data && Array.isArray(res.data)) {
-        setStudents(res.data);  // ✅ सुरुवातीला exam marks टेबल मध्ये सेट कर
+        setStudents(res.data);  
       }
     } catch (err) {
       console.error("Error fetching exam marks", err);
@@ -100,11 +100,11 @@ useEffect(() => {
       await addExamMark(newData);
     }
 
-    // ✅ प्रत्येक save नंतर fresh data fetch कर
+ 
     const res = await getExamMarks();
     setStudents(res.data);
 
-    // फॉर्म reset
+   
     setFormData({
       name: "",
       ut1: "",

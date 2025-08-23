@@ -1,7 +1,7 @@
 // src/services/ScheduleAPI.js
 import axios from "axios";
 
-const API_URL = "http://localhost:5000/api/v1/schedule";
+const API_URL = "https://project-pd83.onrender.com/api/v1/schedule";
 
 // ✅ Get all student schedules
 export const getStudentSchedules = async () => {

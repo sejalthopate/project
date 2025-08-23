@@ -4,7 +4,7 @@ import {
   getAllNotices,
   updateNotice,
   deleteNotice,
-} from "../../services/noticeApi";
+} from "../../services/NoticeApi";
 
 const FacultyNotices = () => {
   const [adminNotices, setAdminNotices] = useState([]);

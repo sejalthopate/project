@@ -7,7 +7,7 @@ import {
   getAdminFacultyRequests,
   updateLeaveStatus,
   getAdminAllRequests,
-  // ❌ fetchStudentLeaves काढलं कारण controller मध्ये define नाही
+ 
 } from "../controller/LeaveRequestController.js";
 
 import { isAuthenticated, isAdmin } from "../middlewares/authMiddleware.js";
@@ -73,9 +73,7 @@ router.get("/faculty", isAuthenticated, getFacultyLeaveRequests);
 // Faculty creates new leave request
 router.post("/faculty/create", isAuthenticated, createLeaveRequest);
 
-// ⚠ इथे आधी fetchStudentLeaves होतं → काढून टाकलं
-// जर तुला खरंच हवे असेल की faculty ला student leaves दिसावेत,
-// तर त्यासाठी controller मध्ये वेगळा function लिहावा लागेल.
+
 
 /* ------------------ 📌 ADMIN ROUTES ------------------ */
 

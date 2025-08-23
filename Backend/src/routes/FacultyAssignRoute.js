@@ -6,7 +6,7 @@ import {
   updateAssignFaculty,
   deleteAssignFaculty
 } from '../controller/FacultyAssignController.js';
-import { isAuthenticated, isAdmin } from '../middlewares/authMiddleware.js'; // 👈 middleware import कर
+import { isAuthenticated, isAdmin } from '../middlewares/authMiddleware.js'; 
 
 const assignfacultyRouter = express.Router();
 

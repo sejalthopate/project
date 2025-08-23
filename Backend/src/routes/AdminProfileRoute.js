@@ -8,12 +8,10 @@ import {
   updateAdminProfile,
 } from "../controller/AdminProfileController.js";
 
-// 🛡️ Middleware आयात कर
 import { isAuthenticated, isAdmin } from "../middlewares/authMiddleware.js";
 
 const adminProfileRouter = express.Router();
 
-// ✅ Middleware सर्व admin profile routes ला लागू कर
 adminProfileRouter.use(isAuthenticated, isAdmin);
 
 // 📌 Create admin profile

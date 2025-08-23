@@ -18,7 +18,7 @@ const handleLogout = () => {
   setIsAuthenticated(false);
   setUser(null);
 
-  // Delay so ProtectedRoute redirect न होईपर्यंत navigate होईल
+ 
   setTimeout(() => {
     navigate("/");
   }, 1); // 1ms is enough

@@ -8,7 +8,7 @@ const AdminLeaveRequests = () => {
   // 📌 Fetch all faculty leave requests (for Admin)
   const fetchLeaves = async () => {
     try {
-      const res = await fetch("http://localhost:5000/api/v1/leave/admin/all", {
+      const res = await fetch("https://project-pd83.onrender.com/api/v1/leave/admin/all", {
         headers: {
           Authorization: `Bearer ${localStorage.getItem("token")}`,
         },
@@ -33,7 +33,7 @@ const AdminLeaveRequests = () => {
   // 📌 Handle status change (Admin updates)
 const handleStatusChange = async (id, newStatus) => {
   try {
-    const res = await fetch(`http://localhost:5000/api/v1/leave/admin/status/${id}`, {
+    const res = await fetch(`https://project-pd83.onrender.com/api/v1/leave/admin/status/${id}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
@@ -44,7 +44,7 @@ const handleStatusChange = async (id, newStatus) => {
 
     const data = await res.json();
     if (data.success) {
-      // ✅ Backend परत updated leave पाठवतो
+     
       setRequests((prev) =>
         prev.map((req) =>
           req._id === id ? { ...req, status: data.leave.status } : req

@@ -8,7 +8,7 @@ export default function MyAttendance() {
     const getData = async () => {
       try {
         const res = await fetchFacultyAttendance();
-        // API madhe res.data.attendance ahe
+   
         setAttendanceData(res.data.attendance || []);
       } catch (error) {
         console.error("Error fetching attendance:", error);

@@ -1,8 +1,7 @@
 // Frontend/src/services/ExamMarkApi.js
 import axios from "axios";
 
-// 👉 तुझा backend चालू असलेला URL
-const API_BASE = "http://localhost:5000/api/exammarks";
+const API_BASE = "https://project-pd83.onrender.com/api/exammarks";
 
 // ✅ Get all exam marks
 export const getExamMarks = () => {

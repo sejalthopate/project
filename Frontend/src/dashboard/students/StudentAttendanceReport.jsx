@@ -20,14 +20,14 @@ export default function AttendanceReport() {
         // Students data
         const token = localStorage.getItem("token");
         const res = await axios.get(
-          "http://localhost:5000/api/v1/students/getall-managestudent",
+          "https://project-pd83.onrender.com/api/v1/students/getall-managestudent",
           { headers: { Authorization: `Bearer ${token}` } }
         );
         setStudents(Array.isArray(res.data.students) ? res.data.students : []);
 
         // Attendance data
      const attendanceRes = await axios.get(
-  "http://localhost:5000/api/v1/AttendanceRoutes/student/view",
+  "https://project-pd83.onrender.com/api/v1/AttendanceRoutes/student/view",
   { headers: { Authorization: `Bearer ${token} `} }
 );
 setAttendanceRecords(attendanceRes.data.attendance || []);
@@ -103,7 +103,7 @@ setAttendanceRecords(attendanceRes.data.attendance || []);
               <tr>
                 <th className="p-3 border border-white/10">Enrollment</th>
                 <th className="p-3 border border-white/10">Name</th>
-                {/* <th className="p-3 border border-white/10">Enrollment</th> */}
+             
                 <th className="p-3 border border-white/10">Department</th>
                 <th className="p-3 border border-white/10">Class</th>
                 <th className="p-3 border border-white/10">% Attendance</th>
@@ -114,7 +114,7 @@ setAttendanceRecords(attendanceRes.data.attendance || []);
                 <tr key={std._id}>
                    <td className="p-3 border border-white/10">{std.enrollmentNo}</td>
                   <td className="p-3 border border-white/10">{std.name}</td>
-                  {/* <td className="p-3 border border-white/10">{std.enrollmentNo}</td> */}
+               
                   <td className="p-3 border border-white/10">{std.department}</td>
                   <td className="p-3 border border-white/10">{std.className}</td>
                   <td className="p-3 border border-white/10">

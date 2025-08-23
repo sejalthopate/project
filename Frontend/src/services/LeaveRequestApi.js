@@ -1,7 +1,7 @@
 import axios from "axios";
 
 // Base API URL
-const API_URL = "http://localhost:5000/api/v1/leave";
+const API_URL = "https://project-pd83.onrender.com/api/v1/leave";
 
 // 🔐 Auth header
 const authHeader = () => {

@@ -24,7 +24,7 @@ export default function FacultyStudentsList() {
       try {
         const token = localStorage.getItem("token");
         const res = await axios.get(
-          "http://localhost:5000/api/v1/students/getall-managestudent",
+          "https://project-pd83.onrender.com/api/v1/students/getall-managestudent",
           {
             headers: {
               Authorization: `Bearer ${token}`,

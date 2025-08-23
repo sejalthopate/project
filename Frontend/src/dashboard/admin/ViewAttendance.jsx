@@ -205,15 +205,7 @@ const FacultyViewAttendance = () => {
                             {f.status}
                           </td>
                           <td className="p-3 border border-white/10">
-                            {/* <button
-                      onClick={() => {
-                        setEditData(fac);
-                        setShowForm(true);
-                      }}
-                      className="text-yellow-400 hover:text-yellow-300 transition "
-                    >
-                      <Pencil size={18} />
-                    </button> */}
+                        
                    <button
   onClick={() => handleDeleteFaculty(rec._id, f._id)}
   className="text-red-400 hover:text-red-300 transition pl-5"

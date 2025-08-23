@@ -9,7 +9,7 @@ const ManageClassView = () => {
     const fetchClasses = async () => {
       try {
         const res = await axios.get(
-          "http://localhost:5000/api/v1/manageclass/getall-manageclass",
+          "https://project-pd83.onrender.com/api/v1/manageclass/getall-manageclass",
           {
             headers: { Authorization: `Bearer ${token}` },
           }

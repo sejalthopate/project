@@ -34,10 +34,9 @@ const SidebarItem = ({ to, label, icon: Icon, exact }) => (
   
 const StudentSidebar = () => {
   
-    const navigate = useNavigate(); // ✅ Import आणि वापर
+    const navigate = useNavigate(); 
     
   
-  // ✅ हे function आता define केलं आहे
   const logoutHandler = () => {
     localStorage.removeItem("token");
     localStorage.removeItem("user");

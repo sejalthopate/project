@@ -67,7 +67,7 @@ const FacultyProfile = () => {
           <img
             src={
               faculty.profileImage
-                ? `http://localhost:5000/uploads/${faculty.profileImage}`
+                ? `https://project-pd83.onrender.com/uploads/${faculty.profileImage}`
                 : "/default-profile.png"
             }
             alt="Profile"

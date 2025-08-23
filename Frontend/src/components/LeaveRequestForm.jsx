@@ -73,7 +73,7 @@ const LeaveRequestTable = ({ requests, onEdit, onDelete, onStatusChange, isAdmin
                   {/* ✅ Actions */}
                   <td className="p-2 border">
                     {isAdmin ? (
-                      // 👉 Admin साठी फक्त static buttons
+                    
                       <div className="flex justify-center space-x-2">
                         <button className="px-2 py-1 bg-blue-400 text-white rounded text-sm cursor-not-allowed">
                           Edit
@@ -83,7 +83,7 @@ const LeaveRequestTable = ({ requests, onEdit, onDelete, onStatusChange, isAdmin
                         </button>
                       </div>
                     ) : (
-                      // 👉 Faculty साठी working buttons
+                      
                       <div className="flex justify-center space-x-2">
                         <button
                           onClick={() => onEdit(req)}

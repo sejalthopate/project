@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API = "http://localhost:5000/api/v1/manageclass";
+const API = "https://project-pd83.onrender.com/api/v1/manageclass";
 
 // Get token from localStorage
 const getAuthConfig = () => {

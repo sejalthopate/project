@@ -3,7 +3,7 @@ import { getFacultyAssignments } from "../../services/FacultyAssignApi";
 import { fetchFacultyAttendance } from "../../services/AttendanceApi";
 import axios from "axios";
 
-// Departments (backend प्रमाणे exact)
+
 const departments = ["Computer", "Electrical", "Civil", "Mechanical", "IT", "Automobile", "E&TC"];
 
 export default function AttendanceReport() {

@@ -1,7 +1,7 @@
 
 
 import React, { useEffect, useState } from "react";
-import { getCourses, addCourse, updateCourse, deleteCourse } from "../../services/coursesApi";
+import { getCourses, addCourse, updateCourse, deleteCourse } from "../../services/CoursesApi";
 import { toast } from "react-toastify";
 import { Pencil, Trash2 } from 'lucide-react';
 

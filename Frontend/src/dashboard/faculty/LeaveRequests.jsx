@@ -22,7 +22,7 @@ const FacultyLeaveRequests = () => {
   // ✅ Fetch Faculty leaves (own requests)
   const fetchLeaves = async () => {
     try {
-      const res = await fetch("http://localhost:5000/api/v1/leave/faculty", {
+      const res = await fetch("https://project-pd83.onrender.com/api/v1/leave/faculty", {
         headers: { Authorization: `Bearer ${localStorage.getItem("token")} `},
       });
       const data = await res.json();
@@ -36,7 +36,7 @@ const FacultyLeaveRequests = () => {
   const fetchStudentLeaves = async () => {
     try {
       const res = await fetch(
-        "http://localhost:5000/api/v1/leave/faculty",
+        "https://project-pd83.onrender.com/api/v1/leave/faculty",
         {
           headers: { Authorization:` Bearer ${localStorage.getItem("token")} `},
         }
@@ -64,11 +64,11 @@ const FacultyLeaveRequests = () => {
     try {
       const payload = { ...formData };
 
-      let url = "http://localhost:5000/api/v1/leave/faculty/create";
+      let url = "https://project-pd83.onrender.com/api/v1/leave/faculty/create";
       let method = "POST";
 
       if (editingRequest) {
-        url = `http://localhost:5000/api/v1/leave/${editingRequest._id}`;
+        url = `https://project-pd83.onrender.com/api/v1/leave/${editingRequest._id}`;
         method = "PUT";
       }
 
@@ -127,7 +127,7 @@ const FacultyLeaveRequests = () => {
 
   const handleDelete = async (id) => {
     try {
-      const res = await fetch(`http://localhost:5000/api/v1/leave/${id}`, {
+      const res = await fetch(`https://project-pd83.onrender.com/api/v1/leave/${id}`, {
         method: "DELETE",
         headers: { Authorization: `Bearer ${localStorage.getItem("token")} `},
       });
@@ -147,7 +147,7 @@ const FacultyLeaveRequests = () => {
   const handleStudentStatusChange = async (id, newStatus) => {
     try {
       const res = await fetch(
-        `http://localhost:5000/api/v1/leave/faculty/student-status/${id}`,
+        `https://project-pd83.onrender.com/api/v1/leave/faculty/student-status/${id}`,
         {
           method: "PUT",
           headers: {

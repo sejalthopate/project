@@ -1,5 +1,5 @@
 import React from "react";
-import AdminSidebar from "../../components/AdminSidebar"; // योग्य path ठेवा
+import AdminSidebar from "../../components/AdminSidebar"; 
 import { Outlet } from "react-router-dom";
 
 const Admin = () => {

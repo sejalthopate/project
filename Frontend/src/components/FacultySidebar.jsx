@@ -21,7 +21,7 @@ import {
   import {FaSignOutAlt} from "react-icons/fa";
 const FacultySidebar = () => {
   const location = useLocation();
- // ✅ हे function आता define केलं आहे
+
   const logoutHandler = () => {
     localStorage.removeItem("token");
     localStorage.removeItem("user");

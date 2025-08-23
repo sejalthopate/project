@@ -5,7 +5,7 @@ import {
   addCourse,
   updateCourse,
   deleteCourse
-} from "../controller/CourseController.js"; // ✅ tu controller import kelay
+} from "../controller/CourseController.js";
 
 const courseRouter = express.Router();
 

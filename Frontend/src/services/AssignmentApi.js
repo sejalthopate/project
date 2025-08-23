@@ -1,70 +1,9 @@
-// import axios from "axios";
-// const BASE = "http://localhost:5000/api/assignments";
-
-// const getToken = () => localStorage.getItem("token"); // token helper
-
-// // ✅ Create Assignment
-// export const createAssignmentAPI = async (formData) => {
-//   const token = getToken();
-
-//   return await axios.post(${BASE}/create, formData, {
-//     headers: {
-//       Authorization: Bearer ${token},
-//       "Content-Type": "multipart/form-data",
-//     },
-//   });
-// };
-
-// // Student साठी assignments fetch करणे
-//  export const fetchAssignmentsForStudent = async () => {
-//   const token = localStorage.getItem("token");
-//   return await axios.get(${BASE}/student, {
-//     headers: { Authorization: Bearer ${token} }
-//   });
-// };
-
-// export const getFacultyAssignments = async () => {
-//   const token = getToken();  // localStorage मधून token घे
-//   try {
-//     const res = await axios.get(${BASE}/faculty, {
-//       headers: {
-//         Authorization: Bearer ${token},  // 🔑 token पाठवला
-//       },
-//     });
-//     return res.data;
-//   } catch (error) {
-//     console.error("Error fetching faculty assignments", error);
-//     throw error;
-//   }
-// };
-
-
-// // ✅ Update assignment (faculty only)
-// export const updateAssignmentAPI = async (id, formData) => {
-//   const token = getToken();
-//   return await axios.put(${BASE}/${id}, formData, {
-//     headers: {
-//       Authorization: Bearer ${token},
-//       "Content-Type": "multipart/form-data",
-//     },
-//   });
-// };
-
-// // ✅ Delete assignment (faculty only)
-// export const deleteAssignmentAPI = async (id) => {
-//   const token = getToken();
-//   return await axios.delete(${BASE}/${id}, {
-//     headers: {
-//       Authorization: Bearer ${token},
-//     },
-//   });
-// };
 
 
 
 import axios from "axios";
 
-const BASE = "http://localhost:5000/api/assignments";
+const BASE = "https://project-pd83.onrender.com/api/assignments";
 
 // Helper: get token from localStorage
 const getToken = () => {

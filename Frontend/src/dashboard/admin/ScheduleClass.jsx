@@ -5,7 +5,7 @@ import {
   addFacultySchedule,
   updateFacultySchedule,
   deleteFacultySchedule,
-} from "../../services/FacultyScheduleAPI";
+} from "../../services/ScheduleClassApi";
 //import { addStudentSchedule}from"../../services/ScheduleAPI";
 
 const departments = ['Computer', 'Electrical', 'Civil', 'Mechanical', 'IT', 'Automobile', 'E&TC'];

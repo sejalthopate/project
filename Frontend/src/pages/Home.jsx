@@ -10,20 +10,7 @@ const Home = () => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-purple-900 to-gray-900 text-white px-4">
 
-      {/* Navbar
-      <nav className="flex justify-between items-center px-6 py-4 bg-blue-800 shadow-md">
-        <h1 className="text-2xl font-bold text-green-300">AttendEase</h1>
-        <div className="space-x-4">
-          <a href="/" className="hover:text-green-300 font-medium">Home</a>
-          <a href="/about" className="hover:text-green-300 font-medium">About</a>
-          <button
-            onClick={() => navigate("/dashboard")}
-            className="bg-blue-600 hover:bg-blue-500 px-4 py-2 rounded text-white font-semibold transition"
-          >
-            Go to Dashboard
-          </button>
-        </div>
-      </nav> */}
+     
 
       {/* Hero Section */}
       <div className="flex flex-col lg:flex-row items-center justify-between px-10 py-16">

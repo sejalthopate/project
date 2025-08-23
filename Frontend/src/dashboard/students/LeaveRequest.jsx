@@ -22,7 +22,7 @@ const StudentLeaveRequests = () => {
   // ✅ Fetch Student leaves (own requests)
   const fetchLeaves = async () => {
     try {
-      const res = await fetch("http://localhost:5000/api/v1/leave/student", {
+      const res = await fetch("https://project-pd83.onrender.com/api/v1/leave/student", {
         headers: { Authorization: `Bearer ${localStorage.getItem("token")} `},
       });
       const data = await res.json();
@@ -47,11 +47,11 @@ const StudentLeaveRequests = () => {
     try {
       const payload = { ...formData };
 
-      let url = "http://localhost:5000/api/v1/leave/student/create";
+      let url = "https://project-pd83.onrender.com/api/v1/leave/student/create";
       let method = "POST";
 
       if (editingRequest) {
-        url = `http://localhost:5000/api/v1/leave/${editingRequest._id}`;
+        url = `https://project-pd83.onrender.com/api/v1/leave/${editingRequest._id}`;
         method = "PUT";
       }
 
@@ -110,7 +110,7 @@ const StudentLeaveRequests = () => {
 
   const handleDelete = async (id) => {
     try {
-      const res = await fetch(`http://localhost:5000/api/v1/leave/${id}`, {
+      const res = await fetch(`https://project-pd83.onrender.com/api/v1/leave/${id}`, {
         method: "DELETE",
         headers: { Authorization: `Bearer ${localStorage.getItem("token")} `},
       });

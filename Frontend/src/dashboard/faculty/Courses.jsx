@@ -1,5 +1,5 @@
 import React, { useEffect, useMemo, useState } from "react";
-import { getCourses } from "../../services/coursesApi";
+import { getCourses } from "../../services/CoursesApi";
 
 const Courses = () => {
   const [courses, setCourses] = useState([]);

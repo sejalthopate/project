@@ -60,12 +60,7 @@ const About = () => {
             </div>
           </div>
 
-          {/* <button
-            onClick={() => navigate("/")}
-            className="mt-8 bg-gradient-to-r from-pink-500 to-purple-500 px-6 py-3 rounded-full text-white font-semibold hover:opacity-90 transition"
-          >
-            Get Started
-          </button> */}
+          
         </div>
       </div>
     </div>

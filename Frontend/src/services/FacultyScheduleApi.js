@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API = "http://localhost:5000/api/v1/facultyschedule";
+const API = "https://project-pd83.onrender.com/api/v1/facultyschedule";
 
 export const getFacultySchedules = async () => {
   const res = await axios.get(API_URL);

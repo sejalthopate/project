@@ -44,15 +44,7 @@ const StudentList = () => {
      
               <th className="p-3 border border-white/10">Enrollment No</th>
               <th className="p-3 border border-white/10">Name</th>
-              {/* <th className="p-3 border border-white/10">Course</th>
-              <th className="p-3 border border-white/10">Semester</th>
-              <th className="p-3 border border-white/10">Department</th>
-              <th className="p-3 border border-white/10">Class</th>
-              <th className="p-3 border border-white/10">Batch</th>
-              <th className="p-3 border border-white/10">Phone</th>
-              <th className="p-3 border border-white/10">DOB</th>
-              <th className="p-3 border border-white/10">Gender</th>
-              <th className="p-3 border border-white/10">Address</th> */}
+
             </tr>
           </thead>
           <tbody>
@@ -62,15 +54,7 @@ const StudentList = () => {
                 
                   <td className="p-3 border border-white/10">{std.enrollmentNo}</td>
                     <td className="p-3 border border-white/10">{std.name}</td>
-              {/* <td className="p-3 border border-white/10">{std.course}</td>    
-                  <td className="p-3 border border-white/10">{std.semester}</td>
-                  <td className="p-3 border border-white/10">{std.department}</td>
-                  <td className="p-3 border border-white/10">{std.className}</td>
-                  <td className="p-3 border border-white/10">{std.batch}</td>
-                  <td className="p-3 border border-white/10">{std.phone}</td>
-                  <td className="p-3 border border-white/10">{std.dob}</td>
-                  <td className="p-3 border border-white/10">{std.gender}</td>
-                  <td className="p-3 border border-white/10">{std.address}</td> */}
+           
                 </tr>
               ))
             ) : (

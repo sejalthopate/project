@@ -11,16 +11,15 @@ const StudentNotices = () => {
 
   const getNotices = async () => {
     try {
-      const { data } = await axios.get("http://localhost:5000/api/v1/notices");
+      const { data } = await axios.get("https://project-pd83.onrender.com/api/v1/notices");
 
-      // Admin कडून आलेल्या notice filter करा
       const adminFiltered = data.filter(
         (notice) =>
           notice.createdBy === "Admin" &&
           (notice.visibleTo === "student" || notice.visibleTo === "all")
       );
 
-      // Faculty कडून आलेल्या notice filter करा
+   
       const facultyFiltered = data.filter(
         (notice) =>
           notice.createdBy === "Faculty" &&

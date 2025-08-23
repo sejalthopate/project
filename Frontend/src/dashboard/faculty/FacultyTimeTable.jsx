@@ -181,15 +181,7 @@ export default function TimetableViewer() {
               <option value="">All Years</option>
               {years.map((y) => <option key={y}>{y}</option>)}
             </select>
-            {/* <select
-              value={facultySubject}
-              onChange={(e) => setFacultySubject(e.target.value)}
-              className="p-2 bg-slate-700 border border-gray-500 rounded-lg"
-              disabled={!facultyDept}
-            >
-              <option value="">All Subjects</option>
-              {subjectOptions.map((s) => <option key={s}>{s}</option>)}
-            </select> */}
+         
           </div>
 
           <div className="overflow-auto rounded-lg shadow-lg border border-gray-600 bg-slate-800">

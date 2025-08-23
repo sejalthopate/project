@@ -13,7 +13,7 @@ export default function MarkAttendance() {
       try {
         const token = localStorage.getItem("token");
         const res = await axios.get(
-          "http://localhost:5000/api/v1/students/getall-managestudent",
+          "https://project-pd83.onrender.com/api/v1/students/getall-managestudent",
           {
             headers: { Authorization: `Bearer ${token}` },
           }
@@ -46,7 +46,7 @@ export default function MarkAttendance() {
     try {
       const token = localStorage.getItem("token");
       await axios.post(
-        "http://localhost:5000/api/v1/AttendanceRoutes/student/mark",
+        "https://project-pd83.onrender.com/api/v1/AttendanceRoutes/student/mark",
         { date, subject, students },
         {
           headers: { Authorization: `Bearer ${token}` },

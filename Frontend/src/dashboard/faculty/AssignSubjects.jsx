@@ -10,7 +10,7 @@ useEffect(() => {
   const fetchAssignments = async () => {
     try {
       const data = await getFacultyAssignments(); 
-      setAssignments(data); // backend आधीच filter केलंय
+      setAssignments(data);
     } catch (err) {
       console.error("Error fetching assignments:", err);
     } finally {

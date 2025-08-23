@@ -1,74 +1,4 @@
-// import React, { useEffect, useState } from "react";
-// import {getFacultyAssignments  } from "../../services/AssignmentApi";
 
-// const StudentAssignments = () => {
-//   const [assignments, setAssignments] = useState([]);
-//   const [loading, setLoading] = useState(true);
-
-//   // 👉 हे values तू login झाल्यावर मिळवू शकतोस (student profile मधून)
-//   const semester = "6";          // example: 6th sem
-//   const department = "Computer"; // example: Computer Dept
-
-//   useEffect(() => {
-//     const fetchAssignments = async () => {
-//       try {
-//         const data = await getFacultyAssignments (semester, department);
-//         console.log("📌 Student fetched assignments:", data);
-//         setAssignments(data);
-//       } catch (error) {
-//         console.error("Error fetching assignments:", error);
-//       } finally {
-//         setLoading(false);
-//       }
-//     };
-
-//     fetchAssignments();
-//   }, []);
-
-//   if (loading) return <p>Loading assignments...</p>;
-
-//   return (
-//     <div className="p-4">
-//       <h2 className="text-xl font-bold mb-3">📚 Your Assignments</h2>
-//       {assignments.length === 0 ? (
-//         <p>No assignments found</p>
-//       ) : (
-//         <ul className="space-y-3">
-//           {assignments.map((a) => (
-//             <li key={a._id} className="border p-3 rounded-md">
-//               <h3 className="font-semibold">{a.title}</h3>
-//               <p>{a.description}</p>
-//               <p><strong>Subject:</strong> {a.subject}</p>
-//               <p><strong>Due Date:</strong> {a.dueDate ? new Date(a.dueDate).toLocaleDateString() : "N/A"}</p>
-//               {a.fileUrl && (
-//                 <a
-//                   href={a.fileUrl}
-//                   target="_blank"
-//                   rel="noopener noreferrer"
-//                   className="text-blue-600 underline"
-//                 >
-//                   Download File
-//                 </a>
-//               )}
-//               {a.resourceLink && (
-//                 <a
-//                   href={a.resourceLink}
-//                   target="_blank"
-//                   rel="noopener noreferrer"
-//                   className="text-green-600 underline ml-3"
-//                 >
-//                   Resource Link
-//                 </a>
-//               )}
-//             </li>
-//           ))}
-//         </ul>
-//       )}
-//     </div>
-//   );
-// };
-
-// export default StudentAssignments;
 
 
 import React, { useEffect, useState } from "react";
@@ -80,7 +10,7 @@ const StudentAssignments = () => {
   const fetchAssignments = async () => {
     try {
       const token = localStorage.getItem("token");
-      const res = await axios.get("http://localhost:5000/api/assignments/all", {
+      const res = await axios.get("https://project-pd83.onrender.com/api/assignments/all", {
         headers: { Authorization: `Bearer ${token}` },
       });
       console.log("Student fetched assignments:", res.data);

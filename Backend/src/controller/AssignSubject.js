@@ -2,7 +2,7 @@
 import { facultyAssignModel } from "../models/FacultyAssignModel";
 export const getMyAssignments = async (req, res) => {
   try {
-    // req.user मध्ये login झालेला user आहे, middleware ने verify केला
+    
     const email = req.user.email;
 
     const assignments = await facultyAssignModel.find({ facultyEmail: email });

@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const BASE_URL = "http://localhost:5000/api/faculty";
+const BASE_URL = "https://project-pd83.onrender.com/api/faculty";
 
 export const getFacultyProfile = async (userId) => {
   try {

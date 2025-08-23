@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "http://localhost:5000/api/v1/courses";
+const API_URL = "https://project-pd83.onrender.com/api/v1/courses";
 
 // Get auth token from localStorage
 const getAuthToken = () => {
