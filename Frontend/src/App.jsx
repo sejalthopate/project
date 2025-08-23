@@ -37,7 +37,7 @@ import StudentsList from "./dashboard/faculty/StudentsList";
 import FacultyNotice from "./dashboard/faculty/FacultyNotice";
 import LeaveRequests from "./dashboard/faculty/LeaveRequests";
 import AttendanceReport from "./dashboard/faculty/AttendanceReport";
-import ClassResources from "./dashboard/faculty/ClassResources";
+
 import FacultyTimeTable from "./dashboard/faculty/FacultyTimeTable";
 import ExamMarks from "./dashboard/faculty/ExamMarks";
 import Courses from "./dashboard/faculty/Courses";
@@ -55,7 +55,7 @@ import StudentTimeTable from "./dashboard/students/StudentTimeTable";
 import StudentAttendanceReport from  './dashboard/students/StudentAttendanceReport'
 import StudentCourses from "./dashboard/students/StudentCourses";
 import StudentAssignments from "./dashboard/students/StudentAssignments";
-import SubjectAssignmentData from "./dashboard/students/SubjectAssignmentData";
+
 import StudentNotice from "./dashboard/students/StudentNotice";
 import ManageclassStudent from "./dashboard/students/ManageClassStudent";
 import StudentLeaveRequests from "./dashboard/students/LeaveRequest";
